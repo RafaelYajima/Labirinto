@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{655F9AB2-0C91-401E-9FB5-4A7F18CE2948}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Labirinto</RootNamespace>
+    <AssemblyName>Labirinto</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPortal.Designer.cs">
+      <DependentUpon>frmPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalaCinco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalaCinco.Designer.cs">
+      <DependentUpon>frmSalaCinco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalaDois.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalaDois.Designer.cs">
+      <DependentUpon>frmSalaDois.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalaQuatro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalaQuatro.Designer.cs">
+      <DependentUpon>frmSalaQuatro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalaSeis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalaSeis.Designer.cs">
+      <DependentUpon>frmSalaSeis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalaFim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalaFim.Designer.cs">
+      <DependentUpon>frmSalaFim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalaTres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalaTres.Designer.cs">
+      <DependentUpon>frmSalaTres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalaUm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalaUm.Designer.cs">
+      <DependentUpon>frmSalaUm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPortal.resx">
+      <DependentUpon>frmPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalaCinco.resx">
+      <DependentUpon>frmSalaCinco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalaDois.resx">
+      <DependentUpon>frmSalaDois.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalaFim.resx">
+      <DependentUpon>frmSalaFim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalaQuatro.resx">
+      <DependentUpon>frmSalaQuatro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalaSeis.resx">
+      <DependentUpon>frmSalaSeis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalaTres.resx">
+      <DependentUpon>frmSalaTres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalaUm.resx">
+      <DependentUpon>frmSalaUm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tesouro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tesouro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chave.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
