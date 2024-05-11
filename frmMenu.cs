@@ -31,6 +31,5 @@ namespace Labirinto
         {
             Environment.Exit(0);
         }
-
     }
 }
