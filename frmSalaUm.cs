@@ -19,13 +19,13 @@ namespace Labirinto
 
         private void btnSala2_Click(object sender, EventArgs e)
         {
-            frmSalaDois frmSalaUm = new frmSalaDois();
+            frmSalaDois frmSalaDois = new frmSalaDois();
 
             this.Hide();
 
-            frmSalaUm.Closed += (object s, EventArgs ev) => this.Show();
+            frmSalaDois.Closed += (object s, EventArgs ev) => this.Show();
 
-            frmSalaUm.Show();
+            frmSalaDois.Show();
         }
 
         private void btnSala4_Click(object sender, EventArgs e)
@@ -40,8 +40,14 @@ namespace Labirinto
         }
 
         private void armadilha_Click(object sender, EventArgs e)
-        { 
-            MessageBox.Show("Voce caio em uma armadilha!");
+        {
+            armadilha1 armadilha1 = new armadilha1();
+
+            this.Hide();
+
+            armadilha1.Closed += (object s, EventArgs ev) => this.Show();
+
+            armadilha1.Show();
         }
     }
 }

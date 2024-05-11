@@ -91,6 +91,7 @@
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmPortal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPortal";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

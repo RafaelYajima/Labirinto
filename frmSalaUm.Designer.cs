@@ -122,6 +122,7 @@
             this.Controls.Add(this.btnSala2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmSalaUm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sala 1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

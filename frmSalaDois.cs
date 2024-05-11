@@ -29,7 +29,13 @@ namespace Labirinto
 
         private void armadilha_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Voce caio em uma armadilha!");
+            armadilha2 armadilha2 = new armadilha2();
+
+            this.Hide();
+
+            armadilha2.Closed += (object s, EventArgs ev) => this.Show();
+
+            armadilha2.Show();
         }
 
     }

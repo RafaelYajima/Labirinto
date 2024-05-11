@@ -98,6 +98,7 @@
             this.Controls.Add(this.armadilha);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmSalaDois";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sala 2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

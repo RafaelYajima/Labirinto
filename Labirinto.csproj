@@ -46,6 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="armadilha1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>armadilha1.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="armadilha2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="armadilha2.Designer.cs">
+      <DependentUpon>armadilha2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +115,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="armadilha1.resx">
+      <DependentUpon>armadilha1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="armadilha2.resx">
+      <DependentUpon>armadilha2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
